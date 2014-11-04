@@ -1,0 +1,9 @@
+name: icinga
+version: 0.0.1
+inherits: wercker/default@0.03
+type: main
+platform: ubuntu@12.04
+script: |
+    sudo apt-get update -y
+    sudo apt-get upgrade -y
+    sudo apt-get install icinga2 -y
