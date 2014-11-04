@@ -1,9 +1,12 @@
 name: icinga
-version: 0.0.1
-inherits: wercker/default@0.03
-type: main
+version: 0.0.2
+inherits: wercker/ubuntu12.04-webessentials@0.0.3
+type: service
 platform: ubuntu@12.04
+description: wercker box for rethinkdb an open source distributed database
+keywords:
+  - icinga
+  - nagios
 script: |
-    sudo apt-get update -y
-    sudo apt-get upgrade -y
-    sudo apt-get install icinga2 -y
+  sudo apt-get update -y
+  sudo apt-get install icinga2 -y
